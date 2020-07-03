@@ -25,6 +25,7 @@ fabric.properties
 
 ### react ###
 build/
+dist/
 *.log
 logs
 **/*.backup.*
@@ -39,4 +40,3 @@ psd
 thumb
 sketch
 
-.env
