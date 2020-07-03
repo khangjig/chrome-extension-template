@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+#extension {
+    width: 400px;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 9999998;
+    background-color: white;
+    box-shadow: 0px 0px 5px #0000009e;
+}
+
+#button {
+    width: 40px;
+    height: 100px;
+    padding: 0 3px;
+    position: fixed;
+    top: 10%;
+    right: 400px;
+    z-index: 9999999;
+    background-color: #ffffff;
+    border-color: #d9efff;
+    border-bottom-width: 1px;
+    border-top-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 0;
+    border-style: solid;
+    box-shadow: 0px 0px 5px 0px #88cbff;
+    padding: 2px;
+}
+
+#button:hover {
+    box-shadow: 0px 0px 5px 0px #40a9ff;
+    animation: hover-close-button 0.3s;
+    background-color: #d9efff;
+}
+
+#button #button-logo {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    /*background-image: url("https://xxx");*/
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#extension iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+@keyframes extension-close {
+    from {
+        right: 0px;
+    }
+    to {
+        right: -400px;
+    }
+}
+
+@keyframes button-close {
+    from {
+        right: 400px;
+    }
+    to {
+        right: 0px;
+    }
+}
+
+@keyframes extension-open {
+    from {
+        right: -400px;
+    }
+    to {
+        right: 0px;
+    }
+}
+
+@keyframes button-open {
+    from {
+        right: 0px;
+    }
+    to {
+        right: 400px;
+    }
+}
+
+@keyframes gmail-close {
+    0% {
+        padding-right: 400px
+    }
+    100% {
+        padding-right: 0px
+    }
+}
+
+@keyframes gmail-open {
+    0% {
+        padding-right: 0px
+    }
+    100% {
+        padding-right: 400px
+    }
+}
+
+@keyframes hover-close-button {
+    from {
+        background-color: #ffffff;
+    }
+    to {
+        background-color: #d9efff;
+    }
+}

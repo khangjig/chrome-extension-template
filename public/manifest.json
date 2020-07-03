@@ -1,0 +1,42 @@
+{
+  "name": "demo",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "demo",
+  "background": {
+    "scripts": [
+      "app/background.js"
+    ],
+    "persistent": false
+  },
+  "browser_action": {},
+  "content_scripts": [
+    {
+      "matches": [
+        "https://mail.google.com/*",
+        "http://mail.google.com/*"
+      ],
+      "css": [
+        "/css/root.css"
+      ],
+      "js": [
+        "/static/js/content.js"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    "/static/css/content.css",
+    "/static/media/*"
+  ],
+  "permissions": [
+    "storage"
+  ],
+  "icons": {
+    "16": "images/get_started16.png",
+    "32": "images/get_started32.png",
+    "48": "images/get_started48.png",
+    "128": "images/get_started128.png"
+  },
+  "content_security_policy": "script-src 'self' 'sha256-TdLAiaD1qsn/yhsv9lnnCjBfzvvKszx0GDkZKwF2J+8='; object-src 'self'"
+}
+

@@ -1,0 +1,42 @@
+#IntelliJ
+.idea/
+/*.iml
+out/
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# CMake
+cmake-build-*/
+
+# File-based project format
+*.iws
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+#file system on mac
+.DS_*
+
+### react ###
+build/
+*.log
+logs
+**/*.backup.*
+**/*.back.*
+
+node_modules
+bower_components
+
+*.sublime*
+
+psd
+thumb
+sketch
+
+.env
